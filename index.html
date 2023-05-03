@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- los meta datos sirven para poder describir una informacion datos o recursos -->
+    <meta charset="UTF-8"> <!--el charset o lector de caracteres nos permite utilizar tildes o algun simbolo de otro idioma sin que afecte al navegador-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Josue Linares">
+    <title>HTML LV-1</title>
+</head>
+<body> <!-- estructuracion no semantica-->
+    <!-- index es la pagina inicial de todo sitio se le llama asi por que asi se le facilita mas al servidor buscar la pagina de inicio -->
+    <!-- estructura inicial: -->
+    <!-- titulos -->
+    <!-- existen estos 6 tipos de titulos pero los mayormente utilizados son los primeros 4 -->
+    <h1>titulo 1 </h1>
+    <h2>titulo 2</h2>
+    <h3>titulo 3</h3>
+    <h4>titulo 4</h4>
+    <h5>titulo 5</h5>
+    <h6>titulo 6</h6>
+
+    <br> <!-- etiqueta espaciadora sirve para hacer la separacion de linea de codigo o de texto-->
+
+    <br>
+    <h3>textos</h3>
+    <!-- textos -->
+    <!-- parrafo: p -->
+    <p>estoy dentro de una etiqueta de parrafo</p> <br>
+    <!-- letra negrita: b -->
+    <b>soy una etiqueta de texto negrita</b> <br>
+    <!-- letra italica: i -->
+    <i>soy la etiqueta italica</i> <br>
+    <!-- letras pequeñas: small  de minuscula a mas pequeña -->
+    <small>soy las letras pequeñas</small> <br>
+    <!-- letras tachadas: strike -->
+    <strike>soy la etiqueta tachada</strike> <br>
+
+    <h3>listas</h3><!-- listas -->
+    <!-- desordenadas: ul -->
+    <ul>
+        <li>soy parte</li>
+        <li>de la lista</li>
+        <li>desordenada</li>
+    </ul>
+    <!-- ordenada: ol -->
+    <ol>
+        <li>soy parte</li>
+        <li>de la lista</li>
+        <li>ordenada</li>
+    </ol>
+<br>
+<br>
+<h3>multimedia</h3>
+    <!-- multimedia -->
+    <!-- imganes: img -->
+    <img src="https://i.pinimg.com/originals/79/fc/f1/79fcf185f9dbac6356662e998817adbd.jpg" alt="foto de paisaje"> <!--el alt es para definir el nombre o una breve descripcion de la imagen que estamos utilizando-->
+    <!-- video: video -->
+    <video src="#" controls></video> <!--en el src colocaremos el nombre de nuestro video y el controls se coloca para poder manipular el video en la pagina-->
+    <!-- otra forma de colocar videos es ir a youtube y darle a compartir luego añadir codigo y visualizar si el video no tiene derecho de autor en este caso se inplementa de la siguiente manera con el iframe-->
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/endobXVGFRE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <!-- audio: audio -->
+    <audio src="" controls></audio> <!--en este caso es igual que la de video y se puede manipular siempre gracias al controls-->
+
+    <br><br>
+    <h3>formularios y inputs</h3>
+    <!-- formularios: form -->
+    <form action="post">
+        <!-- input es la salida de datos y existen varias maneras de demostrar datos y sus propiedades  los mas comunes son los siguientes-->
+        <input type="text">
+        <input type="password">
+        <input type="number">
+        <input type="email">
+        <input type="date">
+        <input type="color">
+        <input type="time" >
+        <input type="button" value="precioname">
+        <input type="submit">
+        <br>
+        <!-- a estos input se les puede agregar la propiedad de placeholder que funciona de la sigueinte forma -->
+        <input type="text" placeholder="escribe tu nombre porfavor">
+    </form>
+    <!-- y si queremos que sea obligatorio el campo se puede hacer con la propiedad de required, ejemplo: -->
+    <form action="post">
+        <input type="text" placeholder="como estas?" required>
+        <input type="button" value="enviame tu respuesta"> 
+    </form>
+<br>
+<br>
+<h3>tabla sin borde</h3>
+    <!-- tablas -->
+    <!-- las tablas se basan en columnas y filas para poder hacer eso ocupamos los tags o etiquetas de: table tr y td ejemplo: -->
+    <table> 
+        <tr>
+            <td><b>nombre</b></td>
+            <td><b>Apellido</b></td>
+            <td><b>edad</b></td>
+            <td><b>nacionalidad</b></td>
+        </tr>
+
+        <tr>
+            <td>Josue</td>
+            <td>Linares</td>
+            <td>19 años</td>
+            <td>Salvadoreño</td>
+        </tr>
+
+        <tr>
+            <td>carlos</td>
+            <td>menjivar</td>
+            <td>14 años</td>
+            <td>Salvadoreño</td>
+        </tr>
+    </table>
+    <!--se le puede crear una propiedad de borde pero no es recomendable crearla aqui sino en css pero para poner el ejemplo quedaria de la sigueinte manera asi como se visualiza en la etique table-->
+    <br>
+    <br>
+    <hr> <!--hr nada mas crea una linea divisora en la pagina pero es algo que no se utiliza en este caso debes investigar las etiquetas obsoletas y las que google puede penalizar-->
+    <h3>Tabla con borde</h3>
+    <table border="1px">
+        <tr>
+            <td><b>marca</b></td>
+            <td><b>precio</b></td>
+        </tr>
+
+        <tr>
+            <td><i>NISSAN</i></td>
+            <td><i>123 mil</i></td>
+        </tr>
+
+        <tr>
+            <td><i>CHEVROLET</i></td>
+            <td><i>15 mil</i></td>
+        </tr>
+    </table>
+</body>
+</html>
